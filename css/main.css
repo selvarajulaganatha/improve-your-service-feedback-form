@@ -1,0 +1,588 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,500,700,900);
+body {
+    background-color: #4285f4;
+    font-family: 'Roboto', sans-serif;
+}
+
+.gap-10 {
+    height: 10px;
+}
+
+.gap-20 {
+    height: 20px;
+}
+
+.gap-30 {
+    height: 30px;
+}
+
+.gap-40 {
+    height: 40px;
+}
+
+.gap-50 {
+    height: 50px;
+}
+
+.cc-main-form {
+    background-color: #ffffff;
+}
+
+.cc-main-heading {
+    padding: 50px 50px 10px 50px;
+}
+
+.fa-thumbs-o-up {
+    font-size: 150px !important;
+    color: #000000;
+    padding: 50px;
+}
+
+.btn-main {
+    border-radius: 0px;
+    background-color: #000000;
+    border: 2px solid #000000;
+    color: #ffffff;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.btn-backward {
+    border-radius: 0px;
+    background-color: #000000;
+    border: 2px solid #000000;
+    color: #ffffff;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.btn-backward:hover {
+    border-radius: 0px;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    color: #000000;
+    font-size: 13px !important;
+    text-transform: uppercase;
+    box-shadow: inset 0 -4px 4px -4px #000000;
+}
+
+.btn-main:hover {
+    border-radius: 0px;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    color: #000000;
+    font-size: 25px;
+    text-transform: uppercase;
+    box-shadow: inset 0 -4px 4px -4px #000000;
+}
+
+.modal-background-img {
+    background: url(../img/geometry2.png);
+}
+
+.modal.fade .modal-dialog {
+    -webkit-transform: scale(0.1);
+    -moz-transform: scale(0.1);
+    -ms-transform: scale(0.1);
+    transform: scale(0.1);
+    top: 300px;
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.modal.fade.in .modal-dialog {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform: translate3d(0, -300px, 0);
+    transform: translate3d(0, -300px, 0);
+    opacity: 1;
+}
+
+.modal-header {
+    min-height: 16.43px;
+    padding: 15px;
+    border-bottom: none;
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #999;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 0px !important;
+    outline: 0;
+    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+    box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+    top: 60px;
+}
+
+.modal-body1 {
+    font-size: 16px;
+    padding: 0px 20px 20px 100px;
+}
+/*.first-form{
+  padding: 35px;
+}*/
+
+input {
+    border: 2px solid #d5d5d5 !important;
+    border-radius: 0px !important;
+    padding: 20px 20px 50px 20px;
+}
+
+input:focus {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border-top: 2px solid #d5d5d5 !important;
+    border-left: 2px solid #d5d5d5 !important;
+    border-right: 2px solid #d5d5d5 !important;
+    border-bottom: 2px solid #d5d5d5 !important;
+}
+
+select {
+    border: 2px solid #d5d5d5 !important;
+    border-radius: 0px !important;
+    padding: 20px 20px 50px 20px;
+}
+
+select:focus {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border-top: 2px solid #d5d5d5 !important;
+    border-left: 2px solid #d5d5d5 !important;
+    border-right: 2px solid #d5d5d5 !important;
+    border-bottom: 2px solid #d5d5d5 !important;
+}
+/* all */
+
+::-webkit-input-placeholder {
+    color: #d5d5d5 !important;
+}
+
+::-moz-placeholder {
+    color: #d5d5d5 !important;
+}
+/* firefox 19+ */
+
+:-ms-input-placeholder {
+    color: #d5d5d5 !important;
+}
+/* ie */
+
+input:-moz-placeholder {
+    color: #d5d5d5 !important;
+}
+
+::-webkit-option-placeholder {
+    color: #d5d5d5 !important;
+}
+
+::-moz-placeholder {
+    color: #d5d5d5 !important;
+}
+/* firefox 19+ */
+
+:-ms-option-placeholder {
+    color: #d5d5d5 !important;
+}
+/* ie */
+
+option:-moz-placeholder {
+    color: #d5d5d5 !important;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 45px;
+    margin: 10px 0px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+/*.spinner {
+  width: 100px;
+}
+.spinner input {
+  text-align: right;
+}
+.input-group-btn-vertical {
+  position: relative;
+  white-space: nowrap;
+  width: 1%;
+  vertical-align: middle;
+  display: table-cell;
+}
+.input-group-btn-vertical > .btn {
+  display: block;
+  float: none;
+  width: 100%;
+  max-width: 100%;
+  padding: 8px;
+  margin-left: -1px;
+  position: relative;
+  border-radius: 0;
+}
+.input-group-btn-vertical > .btn:first-child {
+  border-top-right-radius: 4px;
+}
+.input-group-btn-vertical > .btn:last-child {
+  margin-top: -2px;
+  border-bottom-right-radius: 4px;
+}
+.input-group-btn-vertical i{
+  position: absolute;
+  top: 0;
+  left: 4px;
+}*/
+/*
+.backward{
+  background-color: #000000;
+  font-size: 13px !important;
+  color: #ffffff;
+  padding: 20px;
+}*/
+
+.fa-chevron-left {
+    padding-right: 15px !important;
+}
+
+.fa-chevron-right {
+    padding-left: 15px !important;
+}
+/*http://code.stephenmorley.org/html-and-css/styling-checkboxes-and-radio-buttons/*/
+/*this checkbox and radio button css taken above link */
+
+input[type=checkbox]:not(old),
+input[type=radio]:not(old) {
+    width: 38px;
+    margin: 0;
+    padding: 0;
+    font-size: 2em;
+    opacity: 0;
+}
+
+input[type=checkbox]:not(old) + label,
+input[type=radio]:not(old) + label {
+    display: inline-block;
+    margin-left: -2em;
+    line-height: 30px;
+}
+
+input[type=checkbox]:not(old) + label > span,
+input[type=radio]:not(old) + label > span {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    margin: 0.25em 0.5em 0.25em 0.25em;
+    border: 1em solid rgb(192, 192, 192);
+    border-radius: 1em;
+    background: rgb(224, 224, 224);
+    background-image: -moz-linear-gradient(rgb(240, 240, 240), rgb(224, 224, 224));
+    background-image: -ms-linear-gradient(rgb(240, 240, 240), rgb(224, 224, 224));
+    background-image: -o-linear-gradient(rgb(240, 240, 240), rgb(224, 224, 224));
+    background-image: -webkit-linear-gradient(rgb(240, 240, 240), rgb(224, 224, 224));
+    background-image: linear-gradient(rgb(240, 240, 240), rgb(224, 224, 224));
+    vertical-align: bottom;
+}
+
+input[type=checkbox]:not(old):checked + label > span,
+input[type=radio]:not(old):checked + label > span {
+    background-image: -moz-linear-gradient(#000000, #000000);
+    background-image: -ms-linear-gradient(#000000, #000000);
+    background-image: -o-linear-gradient(#000000, #000000);
+    background-image: -webkit-linear-gradient(#000000, #000000);
+    background-image: linear-gradient(#000000, #000000);
+}
+
+input[type=checkbox]:not(old):checked + label > span:before {
+    content: '✓';
+    display: block;
+    width: 1em;
+    color: #000000;
+    font-size: 1em;
+    line-height: 1em;
+    text-align: center;
+    margin: -7px;
+    text-shadow: 0 0 0.0714em rgb(115, 153, 77);
+    font-weight: bold;
+}
+
+input[type=radio]:not(old):checked + label > span > span {
+    display: block;
+    width: 1em;
+    height: 1em;
+    margin: -7px;
+    border: 0.0625em solid rgb(115, 153, 77);
+    border-radius: 10px;
+    background: rgb(153, 204, 102);
+    background-image: -moz-linear-gradient(#000000, #000000);
+    background-image: -ms-linear-gradient(#000000, #000000);
+    background-image: -o-linear-gradient(#000000, #000000);
+    background-image: -webkit-linear-gradient(#000000, #000000);
+    background-image: linear-gradient(#000000, #000000);
+}
+
+.square-o {
+    font-size: 150px !important;
+    color: #cacaca;
+}
+
+.survey-complete {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+    padding-top: 10px;
+}
+
+.submit-survey {
+    border-radius: 5px;
+    background-color: #00aeef;
+    border: 2px solid #00aeef;
+    color: #ffffff;
+    font-size: 25px;
+    text-transform: uppercase;
+    padding: 10px 25px;
+}
+
+.submit-survey:hover {
+    border-radius: 5px;
+    background-color: #00aeef;
+    border: 2px solid #00aeef;
+    color: #ffffff;
+    font-size: 25px;
+    text-transform: uppercase;
+    padding: 10px 25px;
+}
+
+.popup-haeding {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+    padding-top: 10px;
+}
+
+.radio-word {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: #333333;
+    font-weight: bold;
+}
+
+.gender-main {
+    padding-left: 20px !important;
+    padding-top: 10px !important;
+}
+
+.incrementer {
+    font-size: 14px;
+    margin-top: 22px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.plus-icon {
+    height: 45px;
+    margin-top: 10px;
+}
+
+@media ( max-width: 585px) {
+    .input-group span.input-group-btn,
+    .input-group input,
+    .input-group button {
+        display: block;
+        width: 100%;
+        border-radius: 0;
+        margin: 0;
+    }
+    .input-group {
+        position: relative;
+    }
+    .input-group span.data-up {
+        position: absolute;
+        top: 0;
+    }
+    .input-group span.data-dwn {
+        position: absolute;
+        bottom: 0;
+    }
+    .form-control.text-center {
+        margin: 34px 0;
+    }
+    .input-group-btn:last-child>.btn,
+    .input-group-btn:last-child>.btn-group {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 320px) and (max-width: 480px) {
+    body {
+        background: none;
+    }
+    .cc-main-heading {
+        padding: 0px;
+    }
+    h2,
+    .h2 {
+        font-size: 26px;
+    }
+    h3,
+    .h3 {
+        font-size: 22px;
+    }
+    .fa-thumbs-o-up {
+        font-size: 120px !important;
+        color: #000;
+        padding: 60px;
+    }
+    .btn-main {
+        border-radius: 0px;
+        background-color: #000;
+        border: 2px solid #000;
+        color: #FFF;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    .btn-main:hover {
+        border-radius: 0px;
+        background-color: #000;
+        border: 2px solid #000;
+        color: #FFF;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    .modal-content {
+        position: relative;
+        background-color: #FFF;
+        background-clip: padding-box;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 0px !important;
+        outline: 0px none;
+        box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.5);
+        top: 0px;
+    }
+    .submit-survey {
+        border-radius: 5px;
+        background-color: #00AEEF;
+        border: 2px solid #00AEEF;
+        color: #FFF;
+        font-size: 18px !important;
+        text-transform: uppercase;
+        padding: 10px 25px;
+    }
+    .submit-survey:hover {
+        border-radius: 5px;
+        background-color: #00AEEF;
+        border: 2px solid #00AEEF;
+        color: #FFF;
+        font-size: 18px !important;
+        text-transform: uppercase;
+        padding: 10px 25px;
+    }
+    .survey-complete {
+        font-size: 18px;
+        font-family: "Roboto", sans-serif;
+        color: #000;
+        padding-top: 10px;
+    }
+    .square-o {
+        font-size: 100px !important;
+        color: #CACACA;
+    }
+    .popup-haeding {
+        font-size: 16px;
+        font-family: "Roboto", sans-serif;
+        color: #000;
+        padding-top: 10px;
+    }
+    .condition {
+        font-size: 12px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+    }
+    .popup-haeding {
+    font-size: 16px !important;
+    font-family: "Roboto",sans-serif;
+    color: #000;
+    padding-top: 10px;
+}
+}
+
+@media only screen and (max-width: 360px) {
+    .modal-content {
+        position: relative;
+        background-color: #FFF;
+        background-clip: padding-box;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 0px !important;
+        outline: 0px none;
+        box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.5);
+        top: 0px;
+    }
+    body {
+        background: none;
+    }
+    .popup-haeding {
+        font-size: 19px;
+        font-family: "Roboto", sans-serif;
+        color: #000;
+        padding-top: 10px;
+    }
+    .cc-main-heading {
+        padding: 0px;
+    }
+    .square-o {
+        font-size: 130px !important;
+        color: #CACACA;
+    }
+    .submit-survey {
+        border-radius: 5px;
+        background-color: #00AEEF;
+        border: 2px solid #00AEEF;
+        color: #FFF;
+        font-size: 22px;
+        text-transform: uppercase;
+        padding: 10px 25px;
+    }
+    .submit-survey:hover {
+        border-radius: 5px;
+        background-color: #00AEEF;
+        border: 2px solid #00AEEF;
+        color: #FFF;
+        font-size: 22px;
+        text-transform: uppercase;
+        padding: 10px 25px;
+    }
+    .survey-complete {
+        font-size: 18px;
+        font-family: "Roboto", sans-serif;
+        color: #000;
+        padding-top: 10px;
+    }
+    .inc-count{
+      display: block !important;
+    }
+    .terms-condition{
+      text-align:center;
+    }
+}

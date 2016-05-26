@@ -1,0 +1,670 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Cloudcherry</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.0/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <!-- Modal -->
+    <div class="modal fade" id="survey" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content modal-background-img">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <h3 class="text-center">Enter your personal info</h3>
+                    <div class="first-form">
+                        <form>
+                            <div class="form-group">
+                                <div class="col-sm-6 col-xs-12 center-block">
+                                    <input type="email" class="form-control" id="inputEmail3" placeholder="First name">
+                                </div>
+                            </div>
+                            <div class="form-group ">
+                                <div class="col-sm-6 col-xs-12 center-block">
+                                    <input type="email" class="form-control" id="inputEmail3" placeholder="Last name">
+                                </div>
+                            </div>
+                            <div class="form-group ">
+                                <div class="col-sm-12 col-xs-12 center-block">
+                                    <input type="email" class="form-control" id="inputEmail3" placeholder="Your Email">
+                                </div>
+                            </div>
+                            <div class="form-group ">
+                                <div class="col-sm-12 col-xs-12 center-block">
+                                    <select class="form-control" id="abt_complaint" name="abt_complaint">
+                                        <option value="">Select country</option>
+                                        <option value="AF">Afghanistan</option>
+                                        <option value="AX">Åland Islands</option>
+                                        <option value="AL">Albania</option>
+                                        <option value="DZ">Algeria</option>
+                                        <option value="AS">American Samoa</option>
+                                        <option value="AD">Andorra</option>
+                                        <option value="AO">Angola</option>
+                                        <option value="AI">Anguilla</option>
+                                        <option value="AQ">Antarctica</option>
+                                        <option value="AG">Antigua and Barbuda</option>
+                                        <option value="AR">Argentina</option>
+                                        <option value="AM">Armenia</option>
+                                        <option value="AW">Aruba</option>
+                                        <option value="AU">Australia</option>
+                                        <option value="AT">Austria</option>
+                                        <option value="AZ">Azerbaijan</option>
+                                        <option value="BS">Bahamas</option>
+                                        <option value="BH">Bahrain</option>
+                                        <option value="BD">Bangladesh</option>
+                                        <option value="BB">Barbados</option>
+                                        <option value="BY">Belarus</option>
+                                        <option value="BE">Belgium</option>
+                                        <option value="BZ">Belize</option>
+                                        <option value="BJ">Benin</option>
+                                        <option value="BM">Bermuda</option>
+                                        <option value="BT">Bhutan</option>
+                                        <option value="BO">Bolivia, Plurinational State of</option>
+                                        <option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+                                        <option value="BA">Bosnia and Herzegovina</option>
+                                        <option value="BW">Botswana</option>
+                                        <option value="BV">Bouvet Island</option>
+                                        <option value="BR">Brazil</option>
+                                        <option value="IO">British Indian Ocean Territory</option>
+                                        <option value="BN">Brunei Darussalam</option>
+                                        <option value="BG">Bulgaria</option>
+                                        <option value="BF">Burkina Faso</option>
+                                        <option value="BI">Burundi</option>
+                                        <option value="KH">Cambodia</option>
+                                        <option value="CM">Cameroon</option>
+                                        <option value="CA">Canada</option>
+                                        <option value="CV">Cape Verde</option>
+                                        <option value="KY">Cayman Islands</option>
+                                        <option value="CF">Central African Republic</option>
+                                        <option value="TD">Chad</option>
+                                        <option value="CL">Chile</option>
+                                        <option value="CN">China</option>
+                                        <option value="CX">Christmas Island</option>
+                                        <option value="CC">Cocos (Keeling) Islands</option>
+                                        <option value="CO">Colombia</option>
+                                        <option value="KM">Comoros</option>
+                                        <option value="CG">Congo</option>
+                                        <option value="CD">Congo, the Democratic Republic of the</option>
+                                        <option value="CK">Cook Islands</option>
+                                        <option value="CR">Costa Rica</option>
+                                        <option value="CI">Côte d'Ivoire</option>
+                                        <option value="HR">Croatia</option>
+                                        <option value="CU">Cuba</option>
+                                        <option value="CW">Curaçao</option>
+                                        <option value="CY">Cyprus</option>
+                                        <option value="CZ">Czech Republic</option>
+                                        <option value="DK">Denmark</option>
+                                        <option value="DJ">Djibouti</option>
+                                        <option value="DM">Dominica</option>
+                                        <option value="DO">Dominican Republic</option>
+                                        <option value="EC">Ecuador</option>
+                                        <option value="EG">Egypt</option>
+                                        <option value="SV">El Salvador</option>
+                                        <option value="GQ">Equatorial Guinea</option>
+                                        <option value="ER">Eritrea</option>
+                                        <option value="EE">Estonia</option>
+                                        <option value="ET">Ethiopia</option>
+                                        <option value="FK">Falkland Islands (Malvinas)</option>
+                                        <option value="FO">Faroe Islands</option>
+                                        <option value="FJ">Fiji</option>
+                                        <option value="FI">Finland</option>
+                                        <option value="FR">France</option>
+                                        <option value="GF">French Guiana</option>
+                                        <option value="PF">French Polynesia</option>
+                                        <option value="TF">French Southern Territories</option>
+                                        <option value="GA">Gabon</option>
+                                        <option value="GM">Gambia</option>
+                                        <option value="GE">Georgia</option>
+                                        <option value="DE">Germany</option>
+                                        <option value="GH">Ghana</option>
+                                        <option value="GI">Gibraltar</option>
+                                        <option value="GR">Greece</option>
+                                        <option value="GL">Greenland</option>
+                                        <option value="GD">Grenada</option>
+                                        <option value="GP">Guadeloupe</option>
+                                        <option value="GU">Guam</option>
+                                        <option value="GT">Guatemala</option>
+                                        <option value="GG">Guernsey</option>
+                                        <option value="GN">Guinea</option>
+                                        <option value="GW">Guinea-Bissau</option>
+                                        <option value="GY">Guyana</option>
+                                        <option value="HT">Haiti</option>
+                                        <option value="HM">Heard Island and McDonald Islands</option>
+                                        <option value="VA">Holy See (Vatican City State)</option>
+                                        <option value="HN">Honduras</option>
+                                        <option value="HK">Hong Kong</option>
+                                        <option value="HU">Hungary</option>
+                                        <option value="IS">Iceland</option>
+                                        <option value="IN">India</option>
+                                        <option value="ID">Indonesia</option>
+                                        <option value="IR">Iran, Islamic Republic of</option>
+                                        <option value="IQ">Iraq</option>
+                                        <option value="IE">Ireland</option>
+                                        <option value="IM">Isle of Man</option>
+                                        <option value="IL">Israel</option>
+                                        <option value="IT">Italy</option>
+                                        <option value="JM">Jamaica</option>
+                                        <option value="JP">Japan</option>
+                                        <option value="JE">Jersey</option>
+                                        <option value="JO">Jordan</option>
+                                        <option value="KZ">Kazakhstan</option>
+                                        <option value="KE">Kenya</option>
+                                        <option value="KI">Kiribati</option>
+                                        <option value="KP">Korea, Democratic People's Republic of</option>
+                                        <option value="KR">Korea, Republic of</option>
+                                        <option value="KW">Kuwait</option>
+                                        <option value="KG">Kyrgyzstan</option>
+                                        <option value="LA">Lao People's Democratic Republic</option>
+                                        <option value="LV">Latvia</option>
+                                        <option value="LB">Lebanon</option>
+                                        <option value="LS">Lesotho</option>
+                                        <option value="LR">Liberia</option>
+                                        <option value="LY">Libya</option>
+                                        <option value="LI">Liechtenstein</option>
+                                        <option value="LT">Lithuania</option>
+                                        <option value="LU">Luxembourg</option>
+                                        <option value="MO">Macao</option>
+                                        <option value="MK">Macedonia, the former Yugoslav Republic of</option>
+                                        <option value="MG">Madagascar</option>
+                                        <option value="MW">Malawi</option>
+                                        <option value="MY">Malaysia</option>
+                                        <option value="MV">Maldives</option>
+                                        <option value="ML">Mali</option>
+                                        <option value="MT">Malta</option>
+                                        <option value="MH">Marshall Islands</option>
+                                        <option value="MQ">Martinique</option>
+                                        <option value="MR">Mauritania</option>
+                                        <option value="MU">Mauritius</option>
+                                        <option value="YT">Mayotte</option>
+                                        <option value="MX">Mexico</option>
+                                        <option value="FM">Micronesia, Federated States of</option>
+                                        <option value="MD">Moldova, Republic of</option>
+                                        <option value="MC">Monaco</option>
+                                        <option value="MN">Mongolia</option>
+                                        <option value="ME">Montenegro</option>
+                                        <option value="MS">Montserrat</option>
+                                        <option value="MA">Morocco</option>
+                                        <option value="MZ">Mozambique</option>
+                                        <option value="MM">Myanmar</option>
+                                        <option value="NA">Namibia</option>
+                                        <option value="NR">Nauru</option>
+                                        <option value="NP">Nepal</option>
+                                        <option value="NL">Netherlands</option>
+                                        <option value="NC">New Caledonia</option>
+                                        <option value="NZ">New Zealand</option>
+                                        <option value="NI">Nicaragua</option>
+                                        <option value="NE">Niger</option>
+                                        <option value="NG">Nigeria</option>
+                                        <option value="NU">Niue</option>
+                                        <option value="NF">Norfolk Island</option>
+                                        <option value="MP">Northern Mariana Islands</option>
+                                        <option value="NO">Norway</option>
+                                        <option value="OM">Oman</option>
+                                        <option value="PK">Pakistan</option>
+                                        <option value="PW">Palau</option>
+                                        <option value="PS">Palestinian Territory, Occupied</option>
+                                        <option value="PA">Panama</option>
+                                        <option value="PG">Papua New Guinea</option>
+                                        <option value="PY">Paraguay</option>
+                                        <option value="PE">Peru</option>
+                                        <option value="PH">Philippines</option>
+                                        <option value="PN">Pitcairn</option>
+                                        <option value="PL">Poland</option>
+                                        <option value="PT">Portugal</option>
+                                        <option value="PR">Puerto Rico</option>
+                                        <option value="QA">Qatar</option>
+                                        <option value="RE">Réunion</option>
+                                        <option value="RO">Romania</option>
+                                        <option value="RU">Russian Federation</option>
+                                        <option value="RW">Rwanda</option>
+                                        <option value="BL">Saint Barthélemy</option>
+                                        <option value="SH">Saint Helena, Ascension and Tristan da Cunha</option>
+                                        <option value="KN">Saint Kitts and Nevis</option>
+                                        <option value="LC">Saint Lucia</option>
+                                        <option value="MF">Saint Martin (French part)</option>
+                                        <option value="PM">Saint Pierre and Miquelon</option>
+                                        <option value="VC">Saint Vincent and the Grenadines</option>
+                                        <option value="WS">Samoa</option>
+                                        <option value="SM">San Marino</option>
+                                        <option value="ST">Sao Tome and Principe</option>
+                                        <option value="SA">Saudi Arabia</option>
+                                        <option value="SN">Senegal</option>
+                                        <option value="RS">Serbia</option>
+                                        <option value="SC">Seychelles</option>
+                                        <option value="SL">Sierra Leone</option>
+                                        <option value="SG">Singapore</option>
+                                        <option value="SX">Sint Maarten (Dutch part)</option>
+                                        <option value="SK">Slovakia</option>
+                                        <option value="SI">Slovenia</option>
+                                        <option value="SB">Solomon Islands</option>
+                                        <option value="SO">Somalia</option>
+                                        <option value="ZA">South Africa</option>
+                                        <option value="GS">South Georgia and the South Sandwich Islands</option>
+                                        <option value="SS">South Sudan</option>
+                                        <option value="ES">Spain</option>
+                                        <option value="LK">Sri Lanka</option>
+                                        <option value="SD">Sudan</option>
+                                        <option value="SR">Suriname</option>
+                                        <option value="SJ">Svalbard and Jan Mayen</option>
+                                        <option value="SZ">Swaziland</option>
+                                        <option value="SE">Sweden</option>
+                                        <option value="CH">Switzerland</option>
+                                        <option value="SY">Syrian Arab Republic</option>
+                                        <option value="TW">Taiwan, Province of China</option>
+                                        <option value="TJ">Tajikistan</option>
+                                        <option value="TZ">Tanzania, United Republic of</option>
+                                        <option value="TH">Thailand</option>
+                                        <option value="TL">Timor-Leste</option>
+                                        <option value="TG">Togo</option>
+                                        <option value="TK">Tokelau</option>
+                                        <option value="TO">Tonga</option>
+                                        <option value="TT">Trinidad and Tobago</option>
+                                        <option value="TN">Tunisia</option>
+                                        <option value="TR">Turkey</option>
+                                        <option value="TM">Turkmenistan</option>
+                                        <option value="TC">Turks and Caicos Islands</option>
+                                        <option value="TV">Tuvalu</option>
+                                        <option value="UG">Uganda</option>
+                                        <option value="UA">Ukraine</option>
+                                        <option value="AE">United Arab Emirates</option>
+                                        <option value="GB">United Kingdom</option>
+                                        <option value="US">United States</option>
+                                        <option value="UM">United States Minor Outlying Islands</option>
+                                        <option value="UY">Uruguay</option>
+                                        <option value="UZ">Uzbekistan</option>
+                                        <option value="VU">Vanuatu</option>
+                                        <option value="VE">Venezuela, Bolivarian Republic of</option>
+                                        <option value="VN">Viet Nam</option>
+                                        <option value="VG">Virgin Islands, British</option>
+                                        <option value="VI">Virgin Islands, U.S.</option>
+                                        <option value="WF">Wallis and Futuna</option>
+                                        <option value="EH">Western Sahara</option>
+                                        <option value="YE">Yemen</option>
+                                        <option value="ZM">Zambia</option>
+                                        <option value="ZW">Zimbabwe</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <!--                               <div class="form-group">
+                              <div class="col-sm-4">
+  <div class="input-group spinner">
+    <input type="text" class="form-control" value="42">
+    <div class="input-group-btn-vertical">
+      <button class="btn btn-default" type="button"><i class="fa fa-plus"></i>
+</button>
+      <button class="btn btn-default" type="button"><i class="fa fa-minus"></i>
+</button>
+    </div>
+  </div>
+</div>
+</div> -->
+                            <div class="form-group">
+                                <div class="col-sm-6 col-xs-12">
+                                <div class="inc-count">
+                                    <div class="input-group number-spinner">
+                                        <span class="input-group-btn data-dwn">
+          <button class="btn plus-icon" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span></button>
+                                        </span>
+                                        <input type="text" class="form-control text-center" value="1" min="-10" max="40">
+                                        <span class="input-group-btn data-up">
+          <button class="btn plus-icon" data-dir="up"><span class="glyphicon glyphicon-plus"></span></button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                                <div class="col-sm-6 col-xs-12">
+                                    <p class="incrementer">Your incrementer</p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="form-group">
+                                <div class="col-sm-3">
+                                    <input type="text" class="form-control" id="inputEmail3" placeholder="Age">
+                                </div>
+                                <div class="row">
+                                    <div class="gender-main">
+                                        <div class="col-sm-3">
+                                            <div>
+                                                <input id="option" type="radio" name="field" value="option">
+                                                <label for="option" class="radio-word"><span><span></span></span>Male</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gender-main">
+                                        <div class="col-sm-3">
+                                            <div>
+                                                <input id="option" type="radio" name="field" value="option">
+                                                <label for="option" class="radio-word"><span><span></span></span>Female</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="terms-condition">
+                        <!-- Do you accept terms and condition ? -->
+                        <!-- <input type="checkbox" checked data-toggle="toggle"> -->
+                        <div class="col-xs-12">
+                            <input id="option" type="checkbox" name="field" value="option">
+                            <label for="option" class="condition"><span><span></span></span>Do you accept terms and condition ?</label>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="gap-10"></div>
+                    <div class="">
+                        <div class="col-offset-sm-4 pull-left">
+                            <a type="submit" class="btn btn-backward disabled"><i class="fa fa-chevron-left" ></i>backward</a>
+                        </div>
+                        <div class="col-offset-sm-4 pull-right">
+                            <a type="submit" class="btn btn-backward" onclick="$('#survey').modal('hide'); $('#forward1').modal('show'); ">forward<i class="fa fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+                <div class="clearfix"></div>
+                <div class="gap-30"></div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- /.modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="forward1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content modal-background-img">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="clearfix"></div>
+                    <div class="gap-30 hidden-xs"></div>
+                    <p class="text-center popup-haeding">Please rate your overall satisfaction about the service provided</p>
+                    <div class="clearfix"></div>
+                    <div class="gap-20"></div>
+                    <div class="first-form">
+                        <form class="form-horizontal">
+                            <div>
+                                <input id="option" type="radio" name="field" value="option">
+                                <label for="option" class="radio-word"><span><span></span></span>Not Satisfied</label>
+                            </div>
+                            <div>
+                                <input id="option" type="radio" name="field" value="option">
+                                <label for="option" class="radio-word"><span><span></span></span>Quite Satisfied</label>
+                            </div>
+                            <div>
+                                <input id="option" type="radio" name="field" value="option">
+                                <label for="option" class="radio-word"><span><span></span></span>Satisfied</label>
+                            </div>
+                            <div>
+                                <input id="option" type="radio" name="field" value="option">
+                                <label for="option" class="radio-word"><span><span></span></span>completely Satisfied</label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="gap-30"></div>
+                    <div class="gap-30 "></div>
+                    <div class="">
+                        <div class="col-offset-sm-4 pull-left">
+                            <a type="submit" class="btn btn-backward" onclick="$('#forward1').modal('hide'); $('#survey').modal('show'); "><i class="fa fa-chevron-left"></i>backward</a>
+                        </div>
+                        <div class="col-offset-sm-4 pull-right">
+                            <a type="submit" class="btn btn-backward" onclick="$('#forward1').modal('hide'); $('#forward2').modal('show'); ">forward<i class="fa fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="gap-30"></div>
+                <div class="gap-30"></div>
+            </div>
+        </div>
+    </div>
+    <!-- /.modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="forward2" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content modal-background-img">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="clearfix"></div>
+                    <div class="gap-20"></div>
+                    <p class="text-center popup-haeding">How did you hear about our company?</p>
+                    <div class="clearfix"></div>
+                    <div class="gap-10"></div>
+                    <div class="first-form">
+                        <form class="form-horizontal">
+                            <div>
+                                <input id="option" type="checkbox" name="field" value="option">
+                                <label for="option"><span><span></span></span>Google</label>
+                            </div>
+                            <div>
+                                <input id="option" type="checkbox" name="field" value="option">
+                                <label for="option"><span><span></span></span>A Friend of mine</label>
+                            </div>
+                            <div>
+                                <input id="option" type="checkbox" name="field" value="option">
+                                <label for="option"><span><span></span></span>Prints advertise</label>
+                            </div>
+                            <div>
+                                <input id="option" type="checkbox" name="field" value="option">
+                                <label for="option"><span><span></span></span>Newspaper</label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="gap-30"></div>
+                    <div class="gap-30"></div>
+                    <div class="">
+                        <div class="col-offset-sm-4 pull-left">
+                            <a type="submit" class="btn btn-backward" onclick="$('#forward2').modal('hide'); $('#forward1').modal('show'); "><i class="fa fa-chevron-left"></i>backward</a>
+                        </div>
+                        <div class="col-offset-sm-4 pull-right">
+                            <a type="submit" class="btn btn-backward" onclick="$('#forward2').modal('hide'); $('#forward3').modal('show'); ">forward<i class="fa fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="gap-30"></div>
+                <div class="gap-30"></div>
+            </div>
+        </div>
+    </div>
+    <!-- /.modal -->
+    <!--  Modal -->
+    <div class="modal fade" id="forward3" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content modal-background-img">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="clearfix"></div>
+                    <div class="gap-20"></div>
+                    <p class="text-center popup-haeding">Do you think to suggestour company to a friends or parent?</p>
+                    <div class="clearfix"></div>
+                    <div class="gap-10"></div>
+                    <div class="first-form">
+                        <form class="form-horizontal">
+                            <div>
+                                <input id="option" type="radio" name="field" value="option">
+                                <label for="option"><span><span></span></span>NO</label>
+                            </div>
+                            <div>
+                                <input id="option" type="radio" name="field" value="option">
+                                <label for="option"><span><span></span></span>Maybe</label>
+                            </div>
+                            <div>
+                                <input id="option" type="radio" name="field" value="option">
+                                <label for="option"><span><span></span></span>probably</label>
+                            </div>
+                            <div>
+                                <input id="option" type="radio" name="field" value="option">
+                                <label for="option"><span><span></span></span>100% Sure</label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="gap-30"></div>
+                    <div class="gap-30"></div>
+                    <div class="">
+                        <div class="col-offset-sm-4 pull-left">
+                            <a type="submit" class="btn btn-backward" onclick="$('#forward3').modal('hide'); $('#forward2').modal('show'); "><i class="fa fa-chevron-left"></i>backward</a>
+                        </div>
+                        <div class="col-offset-sm-4 pull-right">
+                            <a type="submit" class="btn btn-backward" onclick="$('#forward3').modal('hide'); $('#forward4').modal('show'); ">forward<i class="fa fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="gap-30"></div>
+                <div class="gap-30"></div>
+            </div>
+        </div>
+    </div>
+    <!-- /.modal -->
+    <!--  Modal -->
+    <div class="modal fade" id="forward4" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content modal-background-img">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <form>
+                            <div class="square-o">
+                                <div class="text-center square-o">
+                                    <i class="fa fa-check-square-o"></i>
+                                </div>
+                            </div>
+                            <p class="text-center survey-complete">Survey complete! Thank you for you time.</p>
+                            <div class="clearfix"></div>
+                            <div class="gap-20"></div>
+                            <div class="text-center">
+                                <a type="submit" class="btn submit-survey">submit the survey</a>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="gap-30"></div>
+                    <div class="gap-30"></div>
+                    <div class="">
+                        <div class="col-offset-sm-4 pull-left">
+                            <a type="submit" class="btn btn-backward" onclick="$('#forward4').modal('hide'); $('#forward3').modal('show'); "><i class="fa fa-chevron-left"></i>backward</a>
+                        </div>
+                        <div class="col-offset-sm-4 pull-right">
+                            <a type="submit" class="btn btn-backward disabled">forward<i class="fa fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="gap-30"></div>
+            </div>
+        </div>
+    </div>
+    <!-- /.modal -->
+    <div class="clearfix"></div>
+    <div class="gap-30 hidden-xs"></div>
+    <div class="gap-30 hidden-xs"></div>
+    <div class="gap-30"></div>
+    <div class="container cc-main-form">
+        <!-- Example row of columns -->
+        <div class="row">
+            <h2 class="text-center cc-main-heading">Help us to improve our service and customer satisfaction.</h2>
+            <div class="clearfix"></div>
+            <div class="gap-20"></div>
+            <div class="text-center">
+                <i class="fa fa-thumbs-o-up"></i>
+            </div>
+            <div class="text-center">
+                <a class="btn btn-main" href="#survey" data-toggle="modal" role="button">take a Survey </a>
+            </div>
+            <div class="clearfix"></div>
+            <div class="gap-30"></div>
+            <div class="gap-30"></div>
+        </div>
+    </div>
+    <!-- /container -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
+    </script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript">
+    //     $(function() {
+    //         $('#toggle-one').bootstrapToggle();
+    //     })
+
+    //     (function ($) {
+    //   $('.spinner .btn:first-of-type').on('click', function() {
+    //     $('.spinner input').val( parseInt($('.spinner input').val(), 10) + 1);
+    //   });
+    //   $('.spinner .btn:last-of-type').on('click', function() {
+    //     $('.spinner input').val( parseInt($('.spinner input').val(), 10) - 1);
+    //   });
+    // })(jQuery);
+
+    $(function() {
+        var action;
+        $(".number-spinner button").mousedown(function() {
+            btn = $(this);
+            input = btn.closest('.number-spinner').find('input');
+            btn.closest('.number-spinner').find('button').prop("disabled", false);
+
+            if (btn.attr('data-dir') == 'up') {
+                action = setInterval(function() {
+                    if (input.attr('max') == undefined || parseInt(input.val()) < parseInt(input.attr('max'))) {
+                        input.val(parseInt(input.val()) + 1);
+                    } else {
+                        btn.prop("disabled", true);
+                        clearInterval(action);
+                    }
+                }, 50);
+            } else {
+                action = setInterval(function() {
+                    if (input.attr('min') == undefined || parseInt(input.val()) > parseInt(input.attr('min'))) {
+                        input.val(parseInt(input.val()) - 1);
+                    } else {
+                        btn.prop("disabled", true);
+                        clearInterval(action);
+                    }
+                }, 50);
+            }
+        }).mouseup(function() {
+            clearInterval(action);
+        });
+    });
+    </script>
+</body>
+
+</html>
